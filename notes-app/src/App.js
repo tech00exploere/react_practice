@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 import Note from "./notes";
 
-function App() {
-  const [notes, setNotes] = useState([]);
-  const [input, setInput] = useState("");
+function App(){
+  const [notes,setNotes]=useState([]);
+  const [input,setInput]=useState("");
 
-  const addNote = () => {
-    if (input.trim() === "") return;
-    setNotes([...notes, { id: Date.now(), text: input }]);
+  const addNote =()=>{
+    if (input.trim()==="")return;
+    setNotes([...note,{id:Date.now(,text:input}]);
     setInput("");
   };
 
